@@ -1,0 +1,12 @@
+<template>
+
+    <div>
+        Content rendered from parent component {parentHello}.
+        <c-child-component child-hello={parentHello}></c-child-component>
+    </div>
+    <template lwc:if={amICalled}>
+        <p>
+            I am called from the main component method.
+        </p>
+    </template>
+</template>

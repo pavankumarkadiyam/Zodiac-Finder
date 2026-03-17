@@ -1,0 +1,13 @@
+<template>
+    <lightning-Card title="Component Composition Parent to Child" class = "slds-m-around_medium">
+        <div class="slds-m-around_medium">
+            <div>
+            Content rendered from main component {hello}.
+            <c-parent-component parent-hello = {hello}></c-parent-component>
+            </div>
+            <div class="slds-m-top_medium slds-align_absolute-center">
+                <lightning-button variant="brand" label="Call Parent Method" onclick={callParentMethod}></lightning-button> 
+            </div>
+        </div>
+    </lightning-Card>
+</template>
