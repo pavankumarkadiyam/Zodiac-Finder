@@ -8,11 +8,6 @@ export default class KnowYourZodiac extends LightningElement {
     zodiacSign;
     zodiacTrait;
     @track zodiacProfile = {};
-
-    connectedCallback() {
-        // Component initialized
-    }
-
     handleDateChange(event) {
         this.userDateOfBirth = event.target.value;
     }
