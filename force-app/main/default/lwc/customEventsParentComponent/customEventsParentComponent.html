@@ -1,6 +1,22 @@
 <template>
     <lightning-card title = "LifeCycle Hooks Parent Card">
         <c-custom-events-child-component onsenddatatoparent={handleChildData}></c-custom-events-child-component>
-        data received from child component{dataReceived}
+        <div class ='slds-m-around_medium'>
+            <template lwc:if={hasRecieved}>
+                <p> <b>Data received from child component:</b> {dataReceived}</p>
+                <p> <b>Timestamp:</b> <lightning-formatted-date-time
+                value={timestamp}
+                year="numeric"
+                month="short"
+                day="2-digit"
+                hour="2-digit"
+                minute="2-digit"
+                second="2-digit"
+                time-zone-name="short"
+                time-zone = {timeZone}></lightning-formatted-date-time>
+            </lightning-formatted-date-time></p>
+                <p> <b>Last Modified By:</b> {lastmodifiedby}</p>
+            </template>
+        </div>
     </lightning-card>
 </template>

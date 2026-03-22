@@ -6,7 +6,12 @@ export default class CustomEventsChildComponent extends LightningElement {
         this.productname ='iphone 14 pro max';
 
         const event = new CustomEvent('senddatatoparent',{
-            detail: this.productname
+            detail: {
+                       dataReceived : this.productname,
+                       timestamp : new Date().toISOString(),
+                       lastmodifiedby : 'John Doe'
+                    }
+
         });
 
         this.dispatchEvent(event);
