@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="View Form Without LDS">
+        <div class="slds-wrap slds-grid slds-p-horizontal_medium">
+            <div class="slds-col slds-size_1-of-2">
+                <label class="slds-form-element_label slds-text-body_small" for="formatted-text_1">Case Number</label>
+                <div id="formatted-text_1" class="slds-form-element__control">
+                    <lightning-formatted-text class="slds-form-element__static" value={caseNumber}>              
+                    </lightning-formatted-text>
+                </div>
+            </div>
+             <div class="slds-col slds-size_1-of-2">
+                <label class="sslds-form-element_label slds-text-body_small" for="formatted-text_2">Subject</label>
+                <div id="formatted-text_2" class="slds-form-element__control">
+                    <lightning-formatted-text class="slds-form-element__static" value={caseSubject}>              
+                    </lightning-formatted-text>
+                </div>
+            </div>
+             <div class="slds-col slds-size_1-of-2">
+                <label class="slds-form-element_label slds-text-body_small" for="formatted-text_3">Priority</label>
+                <div id="formatted-text_3" class="slds-form-element__control">
+                    <lightning-formatted-text class="slds-form-element__static" value={casePriority}>              
+                    </lightning-formatted-text>
+                </div>
+            </div>
+             <div class="slds-col slds-size_1-of-2">
+                <label class="slds-form-element_label slds-text-body_small" for="formatted-text_4">Status</label>
+                <div id="formatted-text_4" class="slds-form-element__control">
+                    <lightning-formatted-text class="slds-form-element__static" value={caseStatus}>              
+                    </lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>
