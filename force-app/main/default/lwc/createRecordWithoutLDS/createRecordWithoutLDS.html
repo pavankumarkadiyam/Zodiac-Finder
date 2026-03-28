@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Create Record without LDS">
+        <div class="slds-p-horizontal_medium slds-grid slds-wrap">
+            <div class="slds-p-around_medium slds-col slds-size_1-of-3">
+                <lightning-record-picker
+                    label="Select Account"
+                    placeholder="Select Account" 
+                    object-api-name="Account" 
+                    value={selectedAccount}
+                    onchange={handleAccountChange}
+
+                >
+                </lightning-record-picker>
+            </div>
+            <div class="slds-p-around_medium slds-col slds-size_1-of-3">
+                <lightning-input label="Subject" value={subject} onchange={handleSubChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-p-around_medium slds-col slds-size_1-of-3">
+                <lightning-record-picker 
+                    label="Select Contact"
+                    placeholder="Select Contact" 
+                    object-api-name="Contact" 
+                    value={selectedContact}
+                    onchange={handleContactChange}
+                >
+                </lightning-record-picker>
+            </div>
+            <div class="slds-p-around_medium slds-col slds-size_1-of-1">
+                <lightning-textarea 
+                    label="Description of the issue" 
+                    value={description}
+                    onchange={handleDescription}
+                ></lightning-textarea>
+            </div>
+            <div class="slds-p-around_medium">
+                <lightning-button type="submit" label="Create Case" variant="brand" onclick={createCase} > </lightning-button>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>
