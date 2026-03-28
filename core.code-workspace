@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "d:/Salesforce/Zodiac Finder/Zodiac Finder"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "d:/Salesforce/Zodiac Finder/Zodiac Finder"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "d:\\Salesforce\\Zodiac Finder\\Zodiac Finder\\.eslintrc.json"
+    }
+  }
+}
