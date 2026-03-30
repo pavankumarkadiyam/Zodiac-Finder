@@ -1,5 +1,6 @@
 class ZodiacUtil {
   static zodiacTraits = [
+    { name: "Aries", from: "03-21", to: "04-19", trait: "Bold, energetic, and confident leader", element: "Fire", symbol: "Ram" },
     { name: "Taurus", from: "04-20", to: "05-20", trait: "Reliable, patient, and grounded", element: "Earth", symbol: "Bull" },
     { name: "Gemini", from: "05-21", to: "06-20", trait: "Adaptable, curious, and communicative", element: "Air", symbol: "Twins" },
     { name: "Cancer", from: "06-21", to: "07-22", trait: "Emotional, nurturing, and protective", element: "Water", symbol: "Crab" },
