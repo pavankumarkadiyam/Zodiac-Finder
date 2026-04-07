@@ -42,5 +42,6 @@
   "eslint.options": {
     "overrideConfigFile": "d:\\Salesforce\\Zodiac Finder\\Zodiac Finder\\.eslintrc.json"
   },
-  "xml.preferences.showSchemaDocumentationType": "none"
+  "xml.preferences.showSchemaDocumentationType": "none",
+  "salesforce.einsteinForDevelopers.enable": false
 }
